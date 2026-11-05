@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17152b">
+  <title>Трохи щастя для тебе ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home">♡ Для тебе</a>
+    <nav>
+      <a href="#draw">Малювання</a>
+      <a href="#fun">Розваги</a>
+      <a href="#message">Лист</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">Маленький куточок тепла</span>
+        <h1>Мамо, нехай<br><span>сьогодні буде світло</span> ✨</h1>
+        <p>Тут можна трохи відпочити, помалювати, погратися й пригадати, як сильно тебе люблять.</p>
+        <a class="primary-btn" href="#draw">Почати відпочивати <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="flower">🌷</div><div class="floating-heart">♡</div>
+      </div>
+    </section>
+
+    <section class="section" id="draw">
+      <div class="section-heading">
+        <span class="eyebrow">Творча хвилинка</span>
+        <h2>Намалюй свою веселку 🌈</h2>
+        <p>Малюй пальцем на телефоні або мишкою на комп'ютері. Колір плавно переливатиметься!</p>
+      </div>
+      <div class="drawing-card">
+        <div class="canvas-wrap"><canvas id="paintCanvas" aria-label="Полотно для малювання"></canvas></div>
+        <div class="tools">
+          <button class="tool-btn active" id="rainbowBtn">🌈 Веселка</button>
+          <label class="tool-label">Товщина <input id="brushSize" type="range" min="2" max="34" value="10"></label>
+          <button class="tool-btn" id="eraserBtn">Ластик</button>
+          <button class="tool-btn" id="clearBtn">Очистити</button>
+          <button class="tool-btn save-btn" id="saveBtn">Зберегти малюнок ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fun">
+      <div class="section-heading">
+        <span class="eyebrow">Трохи радості</span>
+        <h2>Обери собі розвагу 💜</h2>
+      </div>
+      <div class="fun-grid">
+        <article class="fun-card">
+          <div class="fun-icon">💌</div>
+          <h3>Теплі слова</h3>
+          <p id="compliment">Натисни кнопку — і отримай маленьке нагадування.</p>
+          <button class="primary-btn small" id="complimentBtn">Ще одне ❤️</button>
+        </article>
+        <article class="fun-card">
+          <div class="fun-icon">🍀</div>
+          <h3>Побажання дня</h3>
+          <p id="wish">Нехай сьогодні знайдеться хоча б одна причина усміхнутися.</p>
+          <button class="primary-btn small" id="wishBtn">Моє побажання</button>
+        </article>
+        <article class="fun-card">
+          <div class="fun-icon">⭐</div>
+          <h3>Збери зірочки</h3>
+          <p>Натискай на зірочки, що з'являються на екрані. Скільки вдасться зібрати?</p>
+          <div class="score-line">Зібрано: <strong id="score">0</strong></div>
+          <button class="primary-btn small" id="starBtn">Почати гру</button>
+          <div id="starArena" class="star-arena" aria-label="Поле гри"></div>
+        </article>
+        <article class="fun-card">
+          <div class="fun-icon">🌸</div>
+          <h3>Хвилинка спокою</h3>
+          <p id="breathText">Зроби зручний вдих і повільний видих. Нікуди не потрібно поспішати.</p>
+          <button class="primary-btn small" id="calmBtn">Підказка для спокою</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="message">
+      <div class="letter">
+        <div class="letter-flower">💗</div>
+        <span class="eyebrow">Від мене — тобі</span>
+        <h2>Мамо, дякую тобі</h2>
+        <p>Я зробив цей маленький сайт, щоб у тебе було місце, де можна відволіктися, відпочити й відчути трохи тепла. Я дуже тебе люблю. Ти важлива для мене — не лише за те, що робиш, а просто тому, що ти моя мама.</p>
+        <div class="signature">З любов'ю ❤️</div>
+      </div>
+    </section>
+  </main>
+  <footer>Зроблено з любов'ю · Для найріднішої мами ♡</footer>
+  <script src="script.js"></script>
+</body>
+</html>
